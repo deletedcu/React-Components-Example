@@ -1,4 +1,5 @@
 global.expect = require('expect');
+global.enzyme = require('enzyme');
 
 const jsdom = require('jsdom');
 const path = require('path');
@@ -10,7 +11,10 @@ before(function(done) {
   });
   const html = path.resolve(__dirname, '..', 'index.html');
 
-  jsdom.env(html, [], { src: babelResult.code }, (err, window) => {
+  jsdom.env(html, [
+    'node_modules/react/dist/react.js',
+    'node_modules/react-dom/dist/react-dom.js'
+  ], { src: babelResult.code }, (err, window) => {
     if (err) {
       return done(err);
     }
