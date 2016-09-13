@@ -1,9 +1,9 @@
 # React Components Lab
 
-## Objectives
+## Overview
 
-1. Practice writing React components
-2. Practice rendering React components into the DOM
+In this lab, you'll write React components and render them into the DOM. 
+
 
 **Note: there is already a bit of code in `index.js`. Don't remove it, you'll need it to complete the exercise!**
 
