@@ -10,8 +10,7 @@ In this lab, you'll write React components and render them into the DOM.
 ## The Oldercoaster
 ![Grannies having fun](https://media.giphy.com/media/MMQrQQ87G2MmY/giphy.gif)
 
-In `index.js`, create a React component called `OlderCoaster` using the `React.createClass()` syntax. It should render
-the following HTML:
+In `index.js`, create a React component called `OlderCoaster` using the `React.createClass()` syntax. It should render the following HTML:
 
 ```html
 <div class="oldercoaster">
@@ -25,8 +24,7 @@ the following HTML:
 ```
 
 ## Don't look too far
-In `index.js`, create a React component called `InFrontOfYou` using the ES2015 class syntax. It should render the
-following HTML:
+In `index.js`, create a React component called `InFrontOfYou` using the ES2015 class syntax. It should render the following HTML:
 
 ```html
 <div>
@@ -36,8 +34,7 @@ following HTML:
 ```
 
 ## Ye Olde Meat Shoppe
-In `index.js`, create a React component called `ButcherShop` using the ES2015 class syntax. It should render the
-following HTML:
+In `index.js`, create a React component called `ButcherShop` using the ES2015 class syntax. It should render the following HTML:
 
 ```html
 <div class="butcher-shop">
@@ -51,8 +48,7 @@ following HTML:
 </div>
 ```
 
-To render the `<li>` elements, use `.map()` on the `BUTCHER_PRODUCTS` array already defined in the `index.js` file, and
-return the appropriate React element.
+To render the `<li>` elements, use `.map()` on the `BUTCHER_PRODUCTS` array already defined in the `index.js` file, and return the appropriate React element.
 
 ## Resources
 
