@@ -17,10 +17,10 @@ the following HTML:
 <div class="oldercoaster">
   <p>Two grannies having the time of their life!</p>
   <p>Passengers:</p>
-  <ol>
+  <ul>
     <li>Agnes</li>
     <li>Muriel</li>
-  </ol>
+  </ul>
 </div>
 ```
 
@@ -58,3 +58,5 @@ return the appropriate React element.
 
 - [React without JSX](http://jamesknelson.com/learn-raw-react-no-jsx-flux-es6-webpack/)
 - [Khan Academy: React Components](https://khan.github.io/react-components/)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-components-lab'>Components Lab</a> on Learn.co and start learning to code for free.</p>
