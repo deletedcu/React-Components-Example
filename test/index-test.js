@@ -4,7 +4,7 @@ describe('Oldercoaster', function () {
   });
 
   it('should have been created using `React.createClass()`', function () {
-    expect(OlderCoaster.name).toNotExist('The `Oldercoaster` component is being created using a ES2015 class.');
+    expect(OlderCoaster.name).toExist('The `Oldercoaster` component is being created using a ES2015 class.');
   });
 
   it('should have the right DOM markup', function () {
