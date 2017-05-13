@@ -1,10 +1,10 @@
-describe('Oldercoaster', function () {
+describe('OlderCoaster', function () {
   before(function () {
     this.wrapper = enzyme.shallow(React.createElement(OlderCoaster));
   });
 
   it('should have been created using `React.createClass()`', function () {
-    expect(OlderCoaster.name).toNotExist('The `Oldercoaster` component is being created using a ES2015 class.');
+    expect(OlderCoaster.name).toNotExist('The `OlderCoaster` component is being created using a ES2015 class.');
   });
 
   it('should have the right DOM markup', function () {
@@ -18,7 +18,7 @@ describe('InFrontOfYou', function () {
   });
 
   it('should have been created using ES2015 class syntax`', function () {
-    expect(InFrontOfYou.name).toExist('The `Oldercoaster` component is not being created using a ES2015 class.');
+    expect(InFrontOfYou.name).toExist('The `InFrontOfYou` component is not being created using a ES2015 class.');
   });
 
   it('should have the right DOM markup', function () {
@@ -32,7 +32,7 @@ describe('ButcherShop', function () {
   });
 
   it('should have been created using ES2015 class syntax`', function () {
-    expect(ButcherShop.name).toExist('The `Oldercoaster` component is not being created using a ES2015 class.');
+    expect(ButcherShop.name).toExist('The `ButcherShop` component is not being created using a ES2015 class.');
   });
 
   it('should have the right DOM markup', function () {
