@@ -1,28 +1,17 @@
-global.expect = require('expect');
-global.enzyme = require('enzyme');
+require('babel-register')();
 
-const jsdom = require('jsdom');
-const path = require('path');
+var exposedProperties = ['window', 'navigator', 'document'];
 
-before(function(done) {
-  const src = path.resolve(__dirname, '..', 'index.js');
-  const babelResult = require('babel-core').transformFileSync(src, {
-    presets: ['es2015']
-  });
-  const html = path.resolve(__dirname, '..', 'index.html');
+var jsdom = require('jsdom').jsdom;
 
-  jsdom.env(html, [
-    'node_modules/react/dist/react.js',
-    'node_modules/react-dom/dist/react-dom.js'
-  ], { src: babelResult.code }, (err, window) => {
-    if (err) {
-      return done(err);
-    }
+global.document = jsdom('');
+global.window = document.defaultView;
+Object.keys(document.defaultView).forEach((property) => {
+  if (typeof global[property] === 'undefined') {
+    global[property] = document.defaultView[property];
+  }
+});
 
-    Object.keys(window).forEach(key => {
-      global[key] = window[key];
-    });
-
-    return done();
-  });
-}); 
+global.navigator = {
+  userAgent: 'node.js'
+};
