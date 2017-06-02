@@ -8,12 +8,14 @@ In this lab, you'll write React components and render them into the DOM.
 **Note: there is already a bit of code in `index.js`. Don't remove it, you'll need it to complete the exercise!**
 
 ## First Things First 
-Make sure to import `React` and `ReactDOM` into your `/src/index.js` file. As mentioned above, there is some starter code in this file to mount the components. Make note that there is also 3 `const`'s that equal `undefined` at the moment. These are the `const`s that you will define your components with. They are aslo being exported so that you can test them. 
+Make sure to import `React` and `ReactDOM` into your `/src/index.js` file. As mentioned above, there is some starter code in this file to mount the components. Make note that there is also 3 classes that are extending the React.Component class, in this file. These are the classes that you will define your components with. They are aslo being exported so that you can test them. 
+
+We will be writing all of our components using the ES6 class syntax `class YourComponent extends React.Component {}`
 
 ## The Oldercoaster
 ![Grannies having fun](https://media.giphy.com/media/MMQrQQ87G2MmY/giphy.gif)
 
-In `index.js`, create a React component called `OlderCoaster` using the `React.createClass()` syntax. It should render the following HTML:
+In `index.js`, create a React component called `OlderCoaster` using the ES6 class syntax. It should render the following HTML:
 
 ```html
 <div class="oldercoaster">
@@ -27,17 +29,17 @@ In `index.js`, create a React component called `OlderCoaster` using the `React.c
 ```
 
 ## Don't look too far
-In `index.js`, create a React component called `InFrontOfYou` using the ES2015 class syntax. It should render the following HTML:
+In `index.js`, create another React component called `InFrontOfYou`. It should render the following HTML:
 
 ```html
 <div>
   <p>You shouldn't look too far.</p>
-  <p>Sometimes, the solution is <strong>right in front of you.</strong></p>
+  <p>Sometimes, the solution is right in front of you.</p>
 </div>
 ```
 
 ## Ye Olde Meat Shoppe
-In `index.js`, create a React component called `ButcherShop` using the ES2015 class syntax. It should render the following HTML:
+In `index.js`, create one more React component called `ButcherShop`. It should render the following HTML:
 
 ```html
 <div class="butcher-shop">
