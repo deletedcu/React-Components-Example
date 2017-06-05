@@ -2,20 +2,19 @@
 
 ## Overview
 
-In this lab, you'll write React components and render them into the DOM. 
+In this lab, you'll write React components and render them into the DOM.
 
+**Note: there is already a bit of code in `index.js`. Don't remove it; you'll need it to complete the exercise!**
 
-**Note: there is already a bit of code in `index.js`. Don't remove it, you'll need it to complete the exercise!**
+## First Things First
+Make sure to import `React` and `ReactDOM` into your `/src/index.js` file. As mentioned above, there is some starter code in this file to mount the components. In addition, there are three classes in this file that are extending the `React.Component` class. These are the classes with which you will define your components. They are also being exported so that you can run tests against them.
 
-## First Things First 
-Make sure to import `React` and `ReactDOM` into your `/src/index.js` file. As mentioned above, there is some starter code in this file to mount the components. Make note that there is also 3 classes that are extending the React.Component class, in this file. These are the classes that you will define your components with. They are aslo being exported so that you can test them. 
-
-We will be writing all of our components using the ES6 class syntax `class YourComponent extends React.Component {}`
+We will be writing all of our components using the ES6 `class` syntax: `class YourComponent extends React.Component {}`
 
 ## The Oldercoaster
 ![Grannies having fun](https://media.giphy.com/media/MMQrQQ87G2MmY/giphy.gif)
 
-In `index.js`, create a React component called `OlderCoaster` using the ES6 class syntax. It should render the following HTML:
+In `index.js`, create a React component called `OlderCoaster` using the ES6 `class` syntax. It should render the following HTML:
 
 ```html
 <div class="oldercoaster">
