@@ -1,8 +1,11 @@
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { OlderCoaster, InFrontOfYou, ButcherShop } from '../src/index'
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+
+Enzyme.configure({ adapter: new Adapter() })
 
 describe('OlderCoaster', () => {
   let wrapper;
