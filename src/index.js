@@ -18,5 +18,5 @@ ReactDOM.render(
     React.createElement(InFrontOfYou),
     React.createElement(ButcherShop)
   ]),
-  document.getElementById('root')
+  document.getElementById('global')
 );
