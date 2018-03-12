@@ -59,7 +59,9 @@ In `index.js`, create one more React component called `ButcherShop`. It should r
 With this component, we want to render the products from the `BUTCHER_PRODUCTS` array already at the top of the `index.js` file. React supports the rendering of arrays filled with valid JSX, i.e.:
 
 ```JavaScript
-const products = [<li>Tenderloin</li>, <li>Short ribs</li>, etc...]
+const ROTTEN_MEAT_PRODUCTS = ["Old Fish", "Sweeney Todd", "Tomatoes?"]
+
+const products = [<li>{ROTTEN_MEAT_PRODUCTS[0]}</li>, <li>ROTTEN_MEAT_PRODUCTS[1]</li>, etc...]
 render() {
   return (
     <div>
@@ -71,7 +73,11 @@ render() {
 
 Whenever we want to pass a variable into JSX, we need to wrap it in `{}`. The brackets tell React to resolve everything within the `{}` with JavaScript and fill in whatever it returns. This is similar to when we have used string interpolation (i.e. `#{@doge.name}`, `${choux.hobbies}`).
 
-What higher order iterate could we use on `BUTCHER_PRODUCTS` to return that kind of array structure? When a JSX filled array is passed into a `render` method, React will automatically unpack it to JSX!
+What higher order iterator could we use on `BUTCHER_PRODUCTS` to return that kind of array structure? When a JSX filled array is passed into a `render` method, React will automatically unpack it to JSX!
+
+## Look in the Browser!
+
+While its important to get used to reading React code and asserting its functionality directly, (it's just JavaScript, after all!), we should also make sure our React application looks the way we would like in the browser. In order to do this, serve our application by running `npm start`. Thereafter, we are able to inspect our results in the browser at whatever port it announces it's running on.
 
 ## Resources
 
