@@ -1,22 +1,27 @@
-// Make sure to import React and ReactDOM
-
 const BUTCHER_PRODUCTS = [
   'Tenderloin',
   'Short ribs',
   'Beef shin',
   'Ribeye'
-];
+]
 
 // Define these exported classes
-export class OlderCoaster extends React.Component {};
-export class InFrontOfYou extends React.Component {};
-export class ButcherShop extends React.Component {};
+export class OlderCoaster extends React.Component {
+  // your code here
+}
+
+export class InFrontOfYou extends React.Component {
+  // your code here
+}
+
+export class ButcherShop extends React.Component {
+  // your code here
+}
+
 
 ReactDOM.render(
-  React.createElement('div', {}, [
-    React.createElement(OlderCoaster),
-    React.createElement(InFrontOfYou),
-    React.createElement(ButcherShop)
-  ]),
-  document.getElementById('global')
-);
+  <div>
+    render your components here! Refer back to the previous README if you are lost
+  </div>,
+  document.getElementById('root')
+)
