@@ -10,7 +10,14 @@ const BUTCHER_PRODUCTS = [
 
 // Define these exported classes
 export class OlderCoaster extends React.Component {
-  // your code here
+  
+  // this function should return the JSX we want the DOM to render
+  render() {
+    return (
+      <div>Hello!</div>
+    )
+  }
+  
 }
 
 export class InFrontOfYou extends React.Component {
