@@ -1,4 +1,4 @@
-// import React from 'react' // We need to import react so we can make use of its .component class
+// import React, { Component } from 'react' // We need to import react so we can make use of its .component class
 // import ReactDOM from 'react-dom' // ...and we need to import ReactDOM so we can create and test a virtual DOM with react!
 
 const BUTCHER_PRODUCTS = [
@@ -9,27 +9,27 @@ const BUTCHER_PRODUCTS = [
 ]
 
 // Define these exported classes
-export class OlderCoaster extends React.Component {
-  
+export class OlderCoaster extends Component {
+
   // this function should return the JSX we want the DOM to render
   // render() {
   //   return (
   //     <div>Hello!</div>
   //   )
   // }
-  // 
+  //
 }
 
-export class InFrontOfYou extends React.Component {
+export class InFrontOfYou extends Component {
   // your code here
 }
 
-export class ButcherShop extends React.Component {
+export class ButcherShop extends Component {
   // your code here
 }
 
 
-export class App extends React.Component {
+export class App extends Component {
   render() {
     return (
       <div id="app">

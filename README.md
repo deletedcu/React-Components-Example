@@ -130,6 +130,18 @@ class Parent extends Component {
   }
 }
 ```
+
+**Note:** Sometimes, we may also see the following structure:
+
+```js
+class Parent extends React.Component {
+}
+```
+
+This is also valid.  We are importing in the Component module ({ Component }) at
+the top of `src/index.js` , which allows us to just refer to Component directly,
+and is done for readability.
+
 In `src/index.js`, include the three components we've created inside the App
 component to pass the remaining tests.
 
